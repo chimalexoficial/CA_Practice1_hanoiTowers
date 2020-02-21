@@ -6,8 +6,8 @@
 main:
 	addi $s0, $zero, 8 #total disks, user input
 	addi $a1, $zero, 268500992 #memory position for tower A, asigning value by adding the wanted direction plus the vlaue 0 
-	addi $a2, $zero, 268501024 #memory position for tower B
-	addi $a3, $zero, 268501056 #memory position for tower C
+	addi $a2, $zero, 268501024 #memory position for tower B, asigning value by adding the wanted direction plus the vlaue 0
+	addi $a3, $zero, 268501056 #memory position for tower C, asigning value by adding the wanted direction plus the vlaue 0
 	
 	add $t0, $zero, $s0 #setting the registry t0 by adding the value of the regstry s0(the one used to store user input)
 	jal initialize #put all the disks in tower A by calling the initialize funcion 
